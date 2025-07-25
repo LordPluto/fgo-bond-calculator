@@ -51,7 +51,7 @@ async function fetchServants() {
                 // Filter out unwanted entries
                 servant.type === 'normal' &&
                 servant.collectionNo > 0 &&
-                !servant.id.toString().startsWith('9') &&
+                !servant.id.toString().startsWith('99') &&
                 servant.bondGrowth && // Ensure bond data exists
                 (servant.cost > 0 || servant.className.toLowerCase() === 'shielder')
             )
