@@ -259,7 +259,6 @@ function App() {
           (servant) =>
             servant.bondGrowth &&
             servant.className &&
-            !servant.collectionNo.toString().startsWith("9") &&
             !servant.id.toString().startsWith("99") &&
             !(servant.name.toLowerCase().includes("solomon") && servant.className.toLowerCase().includes("caster")) &&
             (servant.cost > 0 || servant.className.toLowerCase() === "shielder")
